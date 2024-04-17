@@ -1,0 +1,42 @@
+Quais os tipos de input?
+
+Type		Descrição	
+button		Define um botão	
+checkbox	Define uma caixa de checagem	
+color		Define uma caixa de cores	
+date		Define um campo de data	
+datetime-local	Define um campo de data e horário	
+email		Define um campo de e-mail	
+file		Define uma campo para upload de arquivos	
+hidden		Define um campo oculto	
+image		Define uma imagem como botão de envio do formulário HTML	
+month		Define um controle de mês e ano	
+number		Define um campo de intervalo de número	
+password	Define um campo de senha (mascarando-a)	
+radio		Define um campo de opção (radio)	
+range		Define um controle de intervalo	
+reset		Define um botão para reiniciar aos valores iniciais	
+search		Define um campo de pesquisa			
+submit		Define um botão de envio do formulário HTML	
+tel		Define um campo de telefone		
+text		Define um campo de texto		
+time		Define um campo de controle de horário	
+url		Define um campo de URL			
+week		Define um campo de controle de semana	
+--------------------------
+
+Como funciona o container form?
+
+R: Container normal, só que para formular o formulario, utilizado para conter as tags de form.
+
+--------------------------
+
+Como funciona o post?
+
+R: O método POST é utilizado no navegador para conversar com o servidor.é como se falássemos ao servidor “Servidor, verifique esses dados e me retorne um resultado adequado”. 
+Dessa forma, ao enviar um formulário através do método POST, os dados serão anexados ao corpo da solicitação HTTP.
+Diferentemente do método GET, explicado anteriormente, o método POST não inclui o corpo na URL. Portanto, os dados enviados não ficarão visíveis na URL.
+
+	Anexa dados de formulário dentro do corpo da solicitação de HTTP. Portanto, os dados não são mostrados na URL;
+	Não tem limitações de tamanho;
+	Os envios de formulários com o POST não podem ser marcados.

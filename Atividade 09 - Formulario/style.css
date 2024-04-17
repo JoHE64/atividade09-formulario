@@ -1,0 +1,100 @@
+body{
+    background-color: thistle;
+}
+.flex{
+    display: flex;
+}
+.fundo{
+    background-color: thistle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 8px solid rebeccapurple;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: rebeccapurple;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.text1{
+    font-size: 20px;
+    color: rebeccapurple;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#margin{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#marginleft{
+    margin-left: 20px;
+}
+#containerarquivo{
+    width: 50px;
+    display: flex;
+}
+#centro{
+    margin: auto;
+    width: fit-content;
+}
+.tirarfundo{
+    mix-blend-mode:multiply;
+}
+
+.formulario{
+    width: 400px;
+    padding: 30px;
+    background-color: rgb(119, 85, 153);
+    border:4px solid black;
+}
+.formulario p{
+    width: 100%;
+    font-size: 1.5em;
+}
+.field{
+    width: 100%;
+    margin: 15px 0;
+}
+.field label, 
+.field span{
+    padding-left: 10px;
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+}
+.radiobox label{
+    width: auto;
+    display: inline-block;
+}
+input[type=text],
+input[type=email],
+textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+input#nao{
+    margin-left: 30px;
+}
+textarea{
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+}
+input[type=submit]{
+    display: block;
+    background-color: #3cff00;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}

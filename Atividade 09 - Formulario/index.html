@@ -1,0 +1,109 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Atividade 09</title>
+</head>
+<body>
+    <header>
+        <div class="fundo">
+            <h1>Bem vindo ao formulário do jonas</h1>
+        </div>
+        <hr>
+        <section>
+            <div id="centro">
+                <!-- Caixas de nome e email -->
+                <form method="get" action="envio_dados.php"> <!-- Dentro desta tag será colocado todos os elementos que compõem o formulario, para essa tag pode ser atribuido method e o atributo action. O atributo method define o método HTTP com que o formulário HTML irá lidar com os dados recebidos. São eles: o método GET e o método POST. Posteriormente vamos entender melhor como funcionam esses dois métodos.-->
+                    <input type="text" name="nome" placeholder="Digite Seu Nome"> <!--Coloca uma caixa com o tipo texto, com o nome da caixa, e falando o que vai estar escrito-->
+                    <input type="email" name="email" placeholder="Digite seu E-Mail"><!--Existem 22 tipos de atributos para o "type"-->
+                    <input type="submit" name="enviar" placeholder="Enviar">
+                </form>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <!-- Check Box -->
+            <div id="centro">
+                <form>
+                    <input type="checkbox" name="veiculo1" value="bicicleta">Eu tenho uma bicicleta<br><!--Coloca uma checkbox, da o nome essa check para ser mais facil a identificação, e coloca uma descrição-->
+                    <input type="checkbox" name="veiculo2" value="carro">Eu tenho um carro<br>
+                    <input type="checkbox" name="veiculo3" value="moto">Eu tenho uma moto<br>
+                </form>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <!-- Escolher uma cor -->
+            <div class="flex" id="centro">
+                <p class="text1">Selecione sua cor preferida:</p><input type="color" name="corfavorita" value="#00000" id="margin">
+            </div>
+        </section>
+        <hr>
+        <section>
+            <!-- Campo tipo date, define um selecionador de data -->
+            <div id="centro">
+                <form>
+                    <p class="text1">Data de nascimento:</p><input type="date" name="nascimento" >
+                </form>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <!-- Campo de seleção de arquivos e um botão de upload -->
+            <div class="flex" id="centro">
+                <form>
+                    <input type="file" name="arquivo"><!--Apenas UM ARQUIVO-->
+                </form>
+                <div id="containerarquivo"></div>
+                <form>
+                    <input type="file" name="arquivos" multiple>
+                </form>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <div class="flex" id="centro">
+                <form method="get" action="./action_page.php">
+                    <input type="text1" name="fname" placeholder="Nome"><br>
+                    <input type="password" name="password" placeholder="Senha"><br>
+                    <input type="image" src="./git.gif" alt="Submit" width="150" height="100" class="tirarfundo">
+                  </form>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <div id="centro">
+                <form class="formulario" method="post"> 
+                    <p> Envie uma mensagem preenchendo o formulário abaixo</p>
+                    <!-- <label> – Define um rótulo ou legenda para um campo ou controle do formulário; -->
+                    <div class="field">
+                        <label for="nome">Seu Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+                    </div>
+                    
+                    <div class="field">
+                        <label for="telefone">Seu Telefone:</label>
+                        <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
+                    </div>
+            
+                    <div class="field">
+                        <label for="email">Seu E-Mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+                    </div>        
+                    <div class="field radiobox">
+                        <span>Deseja receber nossas novidades?</span>
+                        <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+                        <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
+                    </div>
+                    <div class="field">
+                        <label for="mensagem">Sua mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
+                    </div>
+                    <input type="submit" name="acao" value="Enviar">
+            </div>
+        </form>
+        </section>
+    </header>    
+</body>
+</html>
